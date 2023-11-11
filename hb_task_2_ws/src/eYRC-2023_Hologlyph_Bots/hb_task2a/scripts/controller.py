@@ -19,7 +19,7 @@
 
 
 # Team ID:		1796
-# Author List:		Soumitra Naik,Ritesh Kumar Tarai,Shrijoni Ghose
+# Author List:		Soumitra Naik,Ritesh Kumar Tarai,Shrijoni Ghose,Adarsh Priyaranjan
 # Filename:		feedback.py
 # Functions:
 #			[ Comma separated list of functions in this file ]
@@ -38,8 +38,8 @@ from my_robot_interfaces.srv import NextGoal
 # You can add more if required
 ##############################################################
 # Initialize Global variables
-hb_x=0.0
-hb_y=0.0
+hb_x=250.0
+hb_y=250.0
 hb_theta=0
 ################# ADD UTILITY FUNCTIONS HERE #################
 
@@ -62,13 +62,15 @@ class HBController(Node):
         # client for the "next_goal" service
         self.cli = self.create_client(NextGoal, 'next_goal')      
         self.req = NextGoal.Request() 
-        self.index = 1
+        self.index = 0
         self.flag = 0
 
         #other required object
-        self.msg_force=Wrench()
-        self.kp_straight=2.5
-        self.kp_turn=90
+        self.msg_force_rear=Wrench()
+        self.msg_force_right=Wrench()
+        self.msg_force_left=Wrench()
+        self.kp_straight=5
+        self.kp_turn=100
 
     # callback function
     def callback_pose(self,data):
@@ -83,22 +85,29 @@ class HBController(Node):
         self.future = self.cli.call_async(self.req)
         
 
-    def inverse_kinematics(self,error_x,error_y):
+    def inverse_kinematics(self,error_x,error_y,error_theta):
+        if(math.sqrt(error_x**2+error_y**2)<2):
+            self.kp_straight=19.5
+        elif(math.sqrt(error_x**2+error_y**2)>40):
+            self.kp_straight=3
+        else: 
+            self.kp_straight=11
         # force transfermation for left wheel
-        self.msg_force.force.y=  (-error_x * 1/3 - error_y * 0.57735)*self.kp_straight
-        self.pub_left.publish(self.msg_force)
+        self.msg_force_left.force.y=  (-error_x * 1/3 - error_y * 0.57735 + error_theta * 1/3)*self.kp_straight
         # force transfermation for right wheel
-        self.msg_force.force.y=  (-error_x * 1/3 + error_y * 0.57735)*self.kp_straight
-        self.pub_right.publish(self.msg_force)
+        self.msg_force_right.force.y=  (-error_x * 1/3 + error_y * 0.57735 + error_theta * 1/3)*self.kp_straight
         # force transfermation for rear wheel
-        self.msg_force.force.y=  (error_x * 2/3)*self.kp_straight
-        self.pub_rear.publish(self.msg_force)
+        self.msg_force_rear.force.y=  (error_x * 2/3 + error_theta * 1/3)*self.kp_straight
+        # publishing to the corresponding wheel 
+        self.pub_left.publish(self.msg_force_left)
+        self.pub_right.publish(self.msg_force_right)
+        self.pub_rear.publish(self.msg_force_rear)
 
     def turn(self,y):
-        self.msg_force.force.y=y*self.kp_turn
-        self.pub_rear.publish(self.msg_force)  
-        self.pub_right.publish(self.msg_force)
-        self.pub_left.publish(self.msg_force)
+        self.msg_force_left.force.y=y*self.kp_turn
+        self.pub_rear.publish(self.msg_force_left)  
+        self.pub_right.publish(self.msg_force_left)
+        self.pub_left.publish(self.msg_force_left)
        
 
 
@@ -124,19 +133,31 @@ def main(args=None):
                     'Service call failed %r' % (e,))
             else:
                 #########           GOAL POSE             #########
-                x_goal      = response.x_goal
-                y_goal      = response.y_goal
+                x_goal      = response.x_goal+250
+                y_goal      = 250+response.y_goal
                 theta_goal  = response.theta_goal
                 hb_controller.flag = response.end_of_list
                 ####################################################
+                # Calculate Error from feedback
+                error_x=x_goal-hb_x
+                error_y=-y_goal+hb_y
+                error_theta=theta_goal-hb_theta
                 
-                while(abs(hb_theta) > 0.01):
+                
+                # print(f"{response.x_goal},{response.y_goal}")
+                while rclpy.ok():
+                    hb_controller.turn(0.0)
+                                       
+                    if (math.sqrt(error_x**2+error_y**2)>.5):
+                        hb_controller.inverse_kinematics(error_x,error_y,error_theta)
+                    else:
+                        break    
                     rclpy.spin_once(hb_controller)
-                    hb_controller.turn(-hb_theta)
-                else:
                     error_x=x_goal-hb_x
-                    error_y=y_goal-hb_y 
-                    hb_controller.inverse_kinematics(error_x,error_y)
+                    error_y=-y_goal+hb_y
+                    error_theta=theta_goal-hb_theta
+                    
+                    
                 ############     DO NOT MODIFY THIS       #########
                 hb_controller.index += 1
                 if hb_controller.flag == 1 :

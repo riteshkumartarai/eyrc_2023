@@ -50,10 +50,11 @@ class ArUcoDetector(Node):
             pass
         else:
             self.publishPose(c[1][0])
-        
+        # cv2.imshow("s",cv_image)
+        # cv2.waitKey(1)
     def publishPose(self,tpl):
-        self.pose.x= ((tpl[0][0]+tpl[2][0])/2.000-250)
-        self.pose.y= (250-(tpl[0][1]+tpl[2][1])/2.000)
+        self.pose.x= ((tpl[0][0]+tpl[2][0])/2.000)
+        self.pose.y= ((tpl[0][1]+tpl[2][1])/2.000)
         if(float(-tpl[0][1]+tpl[1][1])>0):
             self.pose.theta=-math.acos((-tpl[0][0]+tpl[1][0])/((tpl[0][0]-tpl[1][0])**2+(tpl[0][1]-tpl[1][1])**2)**.5)
         else:
