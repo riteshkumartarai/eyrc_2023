@@ -1,0 +1,1 @@
+/home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/msg/detail/shape__type_support.h

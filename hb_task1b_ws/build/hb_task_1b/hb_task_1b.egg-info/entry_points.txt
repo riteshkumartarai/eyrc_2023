@@ -1,0 +1,3 @@
+[console_scripts]
+service_node1 = hb_task_1b.service_node:main
+

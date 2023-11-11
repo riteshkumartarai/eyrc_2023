@@ -1,0 +1,1 @@
+/home/subun/eyrc_hb/hb_task1a_ws/build/turtlesim/rosidl_generator_cpp/turtlesim/msg/detail/color__struct.hpp

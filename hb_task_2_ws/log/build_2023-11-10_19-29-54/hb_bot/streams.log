@@ -1,0 +1,37 @@
+[0.262s] Invoking command in '/home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2b:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2a:/home/subun/eyrc_hb/hb_task1b_ws/install/hb_task_1b:/home/subun/eyrc_hb/hb_task1a_ws/install/hb_task_1a:/home/subun/ros_ws/install/robot:/opt/ros/humble /usr/bin/cmake --build /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot -- -j16 -l16
+[0.686s] Invoked command in '/home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2b:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2a:/home/subun/eyrc_hb/hb_task1b_ws/install/hb_task_1b:/home/subun/eyrc_hb/hb_task1a_ws/install/hb_task_1a:/home/subun/ros_ws/install/robot:/opt/ros/humble /usr/bin/cmake --build /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot -- -j16 -l16
+[0.707s] Invoking command in '/home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2b:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2a:/home/subun/eyrc_hb/hb_task1b_ws/install/hb_task_1b:/home/subun/eyrc_hb/hb_task1a_ws/install/hb_task_1a:/home/subun/ros_ws/install/robot:/opt/ros/humble /usr/bin/cmake --install /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot
+[0.713s] -- Install configuration: ""
+[0.714s] -- Execute custom install script
+[0.714s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//launch/Spawn_bot.launch.py
+[0.714s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//launch/multi_bot_spawn.launch.py
+[0.714s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_1.dae
+[0.714s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_1.jpg
+[0.714s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_1.jpg.001.jpg
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_2.dae
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_2.jpg
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_2.jpg.001.jpg
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_3.dae
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_3.jpg
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/bot_3.jpg.001.jpg
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//meshes/wheel.stl
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//urdf/hb_bot_1.urdf.xacro
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//urdf/hb_bot_2.urdf.xacro
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//urdf/hb_bot_3.urdf.xacro
+[0.715s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot//urdf/materials.xacro
+[0.716s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/ament_index/resource_index/package_run_dependencies/hb_bot
+[0.716s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/ament_index/resource_index/parent_prefix_path/hb_bot
+[0.717s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/environment/ament_prefix_path.sh
+[0.717s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/environment/ament_prefix_path.dsv
+[0.717s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/environment/path.sh
+[0.717s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/environment/path.dsv
+[0.717s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/local_setup.bash
+[0.718s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/local_setup.sh
+[0.718s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/local_setup.zsh
+[0.718s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/local_setup.dsv
+[0.718s] -- Symlinking: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/package.dsv
+[0.727s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/ament_index/resource_index/packages/hb_bot
+[0.728s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/cmake/hb_botConfig.cmake
+[0.728s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/cmake/hb_botConfig-version.cmake
+[0.728s] -- Up-to-date symlink: /home/subun/eyrc_hb/hb_task_2_ws/install/hb_bot/share/hb_bot/package.xml
+[0.730s] Invoked command in '/home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2b:/home/subun/eyrc_hb/hb_task_2_ws/install/hb_task2a:/home/subun/eyrc_hb/hb_task1b_ws/install/hb_task_1b:/home/subun/eyrc_hb/hb_task1a_ws/install/hb_task_1a:/home/subun/ros_ws/install/robot:/opt/ros/humble /usr/bin/cmake --install /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot
