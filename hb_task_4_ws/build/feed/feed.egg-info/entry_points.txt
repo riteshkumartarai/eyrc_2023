@@ -1,0 +1,4 @@
+[console_scripts]
+feedback = feed.feedback:main
+transform_image = feed.image_transformation:main
+
