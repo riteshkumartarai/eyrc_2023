@@ -20,8 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'feedback=feed.feedback:main',
-            'transform_image=feed.image_transformation:main'
+            'feedback=feed.feedback_node:main',
+            'transform_image=feed.image_transformation:main',
+            'visualize_pen_pose=feed.visualization_penPose:main'
         ],
     },
 )

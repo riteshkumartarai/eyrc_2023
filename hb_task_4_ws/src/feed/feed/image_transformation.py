@@ -41,7 +41,7 @@ class camera_node(Node):
             corners,ids,r=cv2.aruco.detectMarkers(gray,self.bot_marker,parameters=self.params)
             
             if ids is not None:
-                cv2.aruco.drawDetectedMarkers(undistorted_image, corners)
+                # cv2.aruco.drawDetectedMarkers(undistorted_image, corners)
                 for i in range(len(ids)):
                     if ids[i]==8:
                         self.top_left=corners[i][0][0]

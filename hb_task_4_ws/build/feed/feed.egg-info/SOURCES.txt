@@ -4,6 +4,7 @@ setup.py
 feed/__init__.py
 feed/feedback_node.py
 feed/image_transformation.py
+feed/visualization_penPose.py
 feed.egg-info/PKG-INFO
 feed.egg-info/SOURCES.txt
 feed.egg-info/dependency_links.txt
