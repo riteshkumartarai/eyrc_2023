@@ -1,0 +1,19 @@
+[0.747s] Invoking command in '/home/subun/eyrc_hb/hb_task_4_ws/build/feed': PYTHONPATH=/home/subun/eyrc_hb/hb_task_4_ws/build/feed/prefix_override:/home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_4_ws/build/feed/build --no-deps install_data
+[0.910s] running develop
+[1.001s] running egg_info
+[1.001s] writing feed.egg-info/PKG-INFO
+[1.001s] writing dependency_links to feed.egg-info/dependency_links.txt
+[1.001s] writing entry points to feed.egg-info/entry_points.txt
+[1.001s] writing requirements to feed.egg-info/requires.txt
+[1.001s] writing top-level names to feed.egg-info/top_level.txt
+[1.002s] reading manifest file 'feed.egg-info/SOURCES.txt'
+[1.002s] writing manifest file 'feed.egg-info/SOURCES.txt'
+[1.004s] running build_ext
+[1.005s] Creating /home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/python3.10/site-packages/feed.egg-link (link to .)
+[1.006s] Installing feedback script to /home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/feed
+[1.006s] Installing transform_image script to /home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/feed
+[1.006s] Installing visualize_pen_pose script to /home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/feed
+[1.006s] 
+[1.006s] Installed /home/subun/eyrc_hb/hb_task_4_ws/build/feed
+[1.006s] running install_data
+[1.065s] Invoked command in '/home/subun/eyrc_hb/hb_task_4_ws/build/feed' returned '0': PYTHONPATH=/home/subun/eyrc_hb/hb_task_4_ws/build/feed/prefix_override:/home/subun/eyrc_hb/hb_task_4_ws/install/feed/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_4_ws/build/feed/build --no-deps install_data

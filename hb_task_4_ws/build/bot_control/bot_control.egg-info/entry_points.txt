@@ -1,0 +1,3 @@
+[console_scripts]
+bot_controller_4c = bot_control.bot_controller_4c:main
+

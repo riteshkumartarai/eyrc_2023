@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+bot_control/__init__.py
+bot_control/bot_controller_4c.py
+bot_control.egg-info/PKG-INFO
+bot_control.egg-info/SOURCES.txt
+bot_control.egg-info/dependency_links.txt
+bot_control.egg-info/entry_points.txt
+bot_control.egg-info/requires.txt
+bot_control.egg-info/top_level.txt
+bot_control.egg-info/zip-safe
+resource/bot_control
