@@ -1,0 +1,9 @@
+source;share/bot_control5/hook/pythonpath.ps1
+source;share/bot_control5/hook/pythonpath.dsv
+source;share/bot_control5/hook/pythonpath.sh
+source;share/bot_control5/hook/ament_prefix_path.ps1
+source;share/bot_control5/hook/ament_prefix_path.dsv
+source;share/bot_control5/hook/ament_prefix_path.sh
+source;../../build/bot_control5/share/bot_control5/hook/pythonpath_develop.ps1
+source;../../build/bot_control5/share/bot_control5/hook/pythonpath_develop.dsv
+source;../../build/bot_control5/share/bot_control5/hook/pythonpath_develop.sh

@@ -1,0 +1,18 @@
+[0.555s] Invoking command in '/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5': PYTHONPATH=/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/prefix_override:/home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/build --no-deps install_data
+[0.725s] running develop
+[0.816s] running egg_info
+[0.817s] writing feedback5.egg-info/PKG-INFO
+[0.817s] writing dependency_links to feedback5.egg-info/dependency_links.txt
+[0.817s] writing entry points to feedback5.egg-info/entry_points.txt
+[0.817s] writing requirements to feedback5.egg-info/requires.txt
+[0.817s] writing top-level names to feedback5.egg-info/top_level.txt
+[0.818s] reading manifest file 'feedback5.egg-info/SOURCES.txt'
+[0.819s] writing manifest file 'feedback5.egg-info/SOURCES.txt'
+[0.820s] running build_ext
+[0.820s] Creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5.egg-link (link to .)
+[0.821s] Installing feedback_node script to /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/feedback5
+[0.821s] 
+[0.821s] Installed /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5
+[0.821s] running install_data
+[0.821s] creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/feedback5/launch
+[0.846s] Invoked command in '/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5' returned '0': PYTHONPATH=/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/prefix_override:/home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/build --no-deps install_data

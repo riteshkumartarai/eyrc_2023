@@ -1,0 +1,24 @@
+[0.609s] Invoking command in '/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5': PYTHONPATH=/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/prefix_override:/home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/build --no-deps install_data
+[0.782s] running develop
+[0.885s] running egg_info
+[0.885s] creating feedback5.egg-info
+[0.885s] writing feedback5.egg-info/PKG-INFO
+[0.886s] writing dependency_links to feedback5.egg-info/dependency_links.txt
+[0.886s] writing entry points to feedback5.egg-info/entry_points.txt
+[0.886s] writing requirements to feedback5.egg-info/requires.txt
+[0.886s] writing top-level names to feedback5.egg-info/top_level.txt
+[0.886s] writing manifest file 'feedback5.egg-info/SOURCES.txt'
+[0.887s] reading manifest file 'feedback5.egg-info/SOURCES.txt'
+[0.888s] writing manifest file 'feedback5.egg-info/SOURCES.txt'
+[0.889s] running build_ext
+[0.889s] Creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5.egg-link (link to .)
+[0.889s] Installing feedback_node script to /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/feedback5
+[0.889s] 
+[0.889s] Installed /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5
+[0.889s] running install_data
+[0.890s] creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/ament_index
+[0.890s] creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/ament_index/resource_index
+[0.890s] creating /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/ament_index/resource_index/packages
+[0.890s] copying resource/feedback5 -> /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/ament_index/resource_index/packages
+[0.890s] copying package.xml -> /home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/share/feedback5
+[0.910s] Invoked command in '/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5' returned '0': PYTHONPATH=/home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/prefix_override:/home/subun/eyrc_hb/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_5_ws/build/feedback5/build --no-deps install_data

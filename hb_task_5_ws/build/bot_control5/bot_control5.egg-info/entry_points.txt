@@ -1,0 +1,3 @@
+[console_scripts]
+control_node = bot_control5.control_node:main
+

@@ -46,7 +46,7 @@ void subscription_callback(const void * msgin)
 }
 
 void setup() {
-  set_microros_wifi_transports("Subun", "123456789", "192.168.144.44", 8888);
+  set_microros_wifi_transports("Subun", "123456789", "192.168.220.44", 8888);
   Serial.begin(9600);
   servo1.attach(servo1_pin);
   servo2.attach(servo2_pin);

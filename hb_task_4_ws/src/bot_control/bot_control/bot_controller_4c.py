@@ -2,7 +2,7 @@
 
 
 # Team ID:		1796
-# Author List:		Soumitra Naik,Ritesh Kumar Tarai,Shrijoni Ghose,Adarsh Priyaranjan
+# Author List:		Soumitra Naik,Ritesh Kumar Tarai
 # Filename:		bot_controller_4c.py
 # Nodes:		publish-'/cmd_vel/bot1','/cmd_vel/bot2','/cmd_vel/bot3'
 ################### IMPORT MODULES #######################
@@ -26,8 +26,8 @@ class BOT_Controller1(Node):
         self.end_time_square_4 = self.end_time_square_3 + 3
 
         self.pub_bot_2 = self.create_publisher(Twist, "/cmd_vel/bot1", 3)
-        self.pub_bot_3 = self.create_publisher(Twist, "/cmd_vel/bot2", 3)
-        self.pub_bot_1 = self.create_publisher(Twist, "/cmd_vel/bot3", 3)
+        self.pub_bot_3 = self.create_publisher(Twist, "/cmd_vel/bot3", 3)
+        self.pub_bot_1 = self.create_publisher(Twist, "/cmd_vel/bot2", 3)
         self.timer = self.create_timer(1, self.timer_callback_tringle)
         self.timer1 = self.create_timer(1, self.timer_callback_square)
         self.timer2 = self.create_timer(1, self.timer_callback_circle)

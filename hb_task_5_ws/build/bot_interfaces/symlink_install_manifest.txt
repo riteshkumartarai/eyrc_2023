@@ -1,0 +1,15 @@
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/ament_index/resource_index/package_run_dependencies/bot_interfaces
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/ament_index/resource_index/parent_prefix_path/bot_interfaces
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/environment/ament_prefix_path.sh
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/environment/ament_prefix_path.dsv
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/environment/path.sh
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/environment/path.dsv
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/local_setup.bash
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/local_setup.sh
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/local_setup.zsh
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/local_setup.dsv
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/package.dsv
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/ament_index/resource_index/packages/bot_interfaces
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/cmake/bot_interfacesConfig.cmake
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/cmake/bot_interfacesConfig-version.cmake
+/home/subun/eyrc_hb/hb_task_5_ws/install/bot_interfaces/share/bot_interfaces/package.xml

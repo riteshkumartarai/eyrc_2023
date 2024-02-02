@@ -1,0 +1,5 @@
+[console_scripts]
+feedback_node = feedback5.feedback_node:main
+image_proc = feedback5.image_proc:main
+viz_pose = feedback5.viz_pose:main
+
