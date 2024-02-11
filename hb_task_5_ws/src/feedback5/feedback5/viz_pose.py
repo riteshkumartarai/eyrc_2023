@@ -26,6 +26,7 @@ class VisualizationNode(Node):
     def image_callback(self, msg):
         # Convert ROS image to OpenCV image
         self.viz_img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
+        self.img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
 
     def pose_callback_1(self, msg):
         # Draw circle and append pose to the list for pen 1
@@ -69,6 +70,7 @@ def main(args=None):
 
         # Display the image with visualizations
         cv2.imshow("Visualization", visualization_node.viz_img)
+        # cv2.imshow("transformed",visualization_node.img)
         cv2.waitKey(1)
         rclpy.spin_once(visualization_node)
 
