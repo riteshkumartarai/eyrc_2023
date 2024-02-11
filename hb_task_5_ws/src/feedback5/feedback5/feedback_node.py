@@ -52,15 +52,16 @@ class FeedbackNode(Node):
         return self.pose
 
     def publish_bot_position(self, bot_ids, aruco_coordinates):
-        for i in range(1, 4):
-            if np.argwhere(bot_ids == i).any():
-                index = int(np.argwhere(bot_ids == i)[0][0])
-                if i == 1:
-                    self.pub_1.publish(self.publish_pose(aruco_coordinates[index][0]))
-                elif i == 2:
-                    self.pub_2.publish(self.publish_pose(aruco_coordinates[index][0]))
-                elif i == 3:
-                    self.pub_3.publish(self.publish_pose(aruco_coordinates[index][0]))
+        if bot_ids is not None:
+                    for i in range(len(bot_ids)):
+                        if bot_ids[i] == 1:
+                            self.pub_1.publish(self.publish_pose(aruco_coordinates[i][0]))
+                        if bot_ids[i] == 2:
+                            self.pub_2.publish(self.publish_pose(aruco_coordinates[i][0]))
+                        if bot_ids[i] == 3:
+                            self.pub_3.publish(self.publish_pose(aruco_coordinates[i][0]))
+                        
+        
 
 def main(args=None):
     rclpy.init(args=args)
