@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+bot_control_6/__init__.py
+bot_control_6/botControl.py
+bot_control_6/botControl_6b.py
+bot_control_6/imgList.py
+bot_control_6/stopFlagService.py
+bot_control_6/test.py
+bot_control_6.egg-info/PKG-INFO
+bot_control_6.egg-info/SOURCES.txt
+bot_control_6.egg-info/dependency_links.txt
+bot_control_6.egg-info/entry_points.txt
+bot_control_6.egg-info/requires.txt
+bot_control_6.egg-info/top_level.txt
+bot_control_6.egg-info/zip-safe
+resource/bot_control_6

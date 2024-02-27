@@ -1,20 +1,39 @@
+#!/usr/bin/env python3
+
+"""
+* Team ID:          1796
+* Author List:      Soumitra Naik
+* Filename:         image_proc.py (publish bot positions)
+* Theme:            Hologlyph Bot
+* Functions:        __init__, image_callback, calculatePose, publish_bot_position, main
+* Global Variables: None
+"""
+################### IMPORT MODULES #######################
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 import cv2
 from cv_bridge import CvBridge
 import numpy as np
+##########################################################
 
 class CameraNode(Node):
+    """
+    * Function Name: __init__
+    * Input: None
+    * Output: None
+    * Logic: Initializes the CameraNode class and creates image publisher,opens web cam and necessary variables.
+    * Example Call: camera_node = CameraNode()
+    """
     def __init__(self):
         super().__init__("image_transformation")
         # self.publish_undistorted_image = self.create_publisher(Image, '/undistorted_image_raw', 10)
-        self.publish_final_image = self.create_publisher(Image, '/transformed_image_raw', 10)
+        self.publish_final_image = self.create_publisher(Image, '/transformed_image_raw', 1)
         
         self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_1000)
         self.aruco_params = cv2.aruco.DetectorParameters()
         self.cv_bridge = CvBridge()
-        # Open the webcam 
+        # Open the cam_module 
         self.cap = cv2.VideoCapture(2)
 
         self.camera_matrix = np.array([[555.62655, 0., 331.80275],
@@ -28,6 +47,13 @@ class CameraNode(Node):
         self.down_right = [480, 640]
         self.timer = self.create_timer(.01, self.timer_callback)
 
+    """
+    * Function Name: timer_callback
+    * Input: None
+    * Output: None
+    * Logic: Processes the image from cam_module and generate perspective transformed image
+    * Example Call: Automatically invoked.
+    """
     def timer_callback(self):
         try:
             ret,cv_image = self.cap.read()
@@ -39,7 +65,7 @@ class CameraNode(Node):
 
                 # Detect Aruco marker
                 corners, ids, _ = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
-
+                # if (self.top_left == [0, 0] or self.top_right == [0, 640] or self.down_left == [480, 0] or self.down_right == [480, 640]):
                 if ids is not None:
                     for i in range(len(ids)):
                         if ids[i] == 8:
@@ -50,6 +76,7 @@ class CameraNode(Node):
                             self.down_right = corners[i][0][2]
                         if ids[i] == 4:
                             self.down_left = corners[i][0][3]
+                            
 
                 # Define the source points (coordinates of a rectangle in the original image)
                 source_points = np.float32([self.top_left, self.top_right, self.down_left, self.down_right])
@@ -69,12 +96,19 @@ class CameraNode(Node):
             self.get_logger().error('Error converting ROS Image to OpenCV image: %s' % str(e))
             return
 
+
         # Publishing modified images
-
-        # self.publish_undistorted_image.publish(self.cv_bridge.cv2_to_imgmsg(np.array(undistorted_image), encoding="bgr8"))
-        
         self.publish_final_image.publish(self.cv_bridge.cv2_to_imgmsg(np.array(transformed_image), encoding="bgr8"))
+        
+        # self.publish_undistorted_image.publish(self.cv_bridge.cv2_to_imgmsg(np.array(undistorted_image), encoding="bgr8"))
 
+"""
+* Function Name: main
+* Input: args
+* Output: Image
+* Logic: Initializes the CameraNode and spins it until shutdown.
+* Example Call: main()
+"""
 def main(args=None):
     rclpy.init(args=args)
 

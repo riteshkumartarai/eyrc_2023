@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing feedback_6.egg-info/PKG-INFO
+writing dependency_links to feedback_6.egg-info/dependency_links.txt
+writing entry points to feedback_6.egg-info/entry_points.txt
+writing requirements to feedback_6.egg-info/requires.txt
+writing top-level names to feedback_6.egg-info/top_level.txt
+reading manifest file 'feedback_6.egg-info/SOURCES.txt'
+writing manifest file 'feedback_6.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/subun/eyrc_hb/hb_task_6_ws/install/feedback_6/lib/python3.10/site-packages/feedback-6.egg-link (link to .)
+
+Installed /home/subun/eyrc_hb/hb_task_6_ws/build/feedback_6
+running install_data

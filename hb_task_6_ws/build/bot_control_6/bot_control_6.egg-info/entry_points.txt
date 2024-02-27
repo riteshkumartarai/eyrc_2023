@@ -1,0 +1,5 @@
+[console_scripts]
+bonus = bot_control_6.botControl_6b:main
+flower = bot_control_6.botControl:main
+stop_service = bot_control_6.stopFlagService:main
+

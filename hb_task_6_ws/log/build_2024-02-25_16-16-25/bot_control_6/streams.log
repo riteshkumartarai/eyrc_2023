@@ -1,0 +1,24 @@
+[0.863s] Invoking command in '/home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6': PYTHONPATH=/home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6/prefix_override:/home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6/build --no-deps install_data
+[1.028s] running develop
+[1.122s] running egg_info
+[1.122s] creating bot_control_6.egg-info
+[1.122s] writing bot_control_6.egg-info/PKG-INFO
+[1.123s] writing dependency_links to bot_control_6.egg-info/dependency_links.txt
+[1.123s] writing entry points to bot_control_6.egg-info/entry_points.txt
+[1.123s] writing requirements to bot_control_6.egg-info/requires.txt
+[1.123s] writing top-level names to bot_control_6.egg-info/top_level.txt
+[1.123s] writing manifest file 'bot_control_6.egg-info/SOURCES.txt'
+[1.123s] reading manifest file 'bot_control_6.egg-info/SOURCES.txt'
+[1.124s] writing manifest file 'bot_control_6.egg-info/SOURCES.txt'
+[1.125s] running build_ext
+[1.125s] Creating /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/python3.10/site-packages/bot-control-6.egg-link (link to .)
+[1.126s] Installing flower script to /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/bot_control_6
+[1.126s] 
+[1.126s] Installed /home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6
+[1.126s] running install_data
+[1.126s] creating /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/share/ament_index
+[1.126s] creating /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/share/ament_index/resource_index
+[1.126s] creating /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/share/ament_index/resource_index/packages
+[1.126s] copying resource/bot_control_6 -> /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/share/ament_index/resource_index/packages
+[1.127s] copying package.xml -> /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/share/bot_control_6
+[1.197s] Invoked command in '/home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6' returned '0': PYTHONPATH=/home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6/prefix_override:/home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6/build --no-deps install_data

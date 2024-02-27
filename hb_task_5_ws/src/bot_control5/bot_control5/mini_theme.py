@@ -2,9 +2,10 @@
 
 
 # Team ID:		1796
-# Author List:		Soumitra Naik,Ritesh Kumar Tarai
-# Filename:		bot_controller_5B.py
-# Nodes:		publish-'/cmd_vel/bot1','/cmd_vel/bot2','/cmd_vel/bot3'
+# Author List:		Soumitra Naik
+# Filename:		mini_theme.py
+# Topic:		publish-      '/cmd_vel/bot1','/cmd_vel/bot2','/cmd_vel/bot3','/pen1_down','/pen2_down','/pen3_down'
+#               subscribe-    "/pen1_pose","/pen2_pose","/pen3_pose" 
 ################### IMPORT MODULES #######################
 
 import rclpy
@@ -18,20 +19,20 @@ from std_srvs.srv import Empty
 class BOT_Controller_miniTheme(Node):
     def __init__(self):
         super().__init__("mini_theme")
-        self.pen1=self.create_publisher(Bool,'/pen1_down',5)
-        self.pen2=self.create_publisher(Bool,'/pen2_down',5)
-        self.pen3=self.create_publisher(Bool,'/pen3_down',5)
-        self.pub_bot_1 = self.create_publisher(Twist, "/cmd_vel/bot1", 5)
-        self.pub_bot_2 = self.create_publisher(Twist, "/cmd_vel/bot2", 5)
-        self.pub_bot_3 = self.create_publisher(Twist, "/cmd_vel/bot3", 5)
+        self.pen1=self.create_publisher(Bool,'/pen1_down',1)
+        self.pen2=self.create_publisher(Bool,'/pen2_down',1)
+        self.pen3=self.create_publisher(Bool,'/pen3_down',1)
+        self.pub_bot_1 = self.create_publisher(Twist, "/cmd_vel/bot1", 1)
+        self.pub_bot_2 = self.create_publisher(Twist, "/cmd_vel/bot2", 1)
+        self.pub_bot_3 = self.create_publisher(Twist, "/cmd_vel/bot3", 1)
         self.pen_down=Bool()
         self.t1=0.0
         self.t2=2*math.pi/3
         self.t3=4*math.pi/3
-        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose",self.callbackBot1, 5)
-        self.sub_bot_2 = self.create_subscription(Pose2D, "/pen2_pose",self.callbackBot2, 5)
-        self.sub_bot_3 = self.create_subscription(Pose2D, "/pen3_pose",self.callbackBot3, 5)
-        self.kp_straight=0
+        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose",self.callbackBot1, 1)
+        self.sub_bot_2 = self.create_subscription(Pose2D, "/pen2_pose",self.callbackBot2, 1)
+        self.sub_bot_3 = self.create_subscription(Pose2D, "/pen3_pose",self.callbackBot3, 1)
+        self.kp_straight=10
         self.ki=0.0000 #.00001
         self.integral_left = 0.0
         self.integral_right = 0.0
@@ -49,24 +50,28 @@ class BOT_Controller_miniTheme(Node):
         # Calculate Error from feedback
         error_x=x-msg.x
         error_y=-y+msg.y
-        error_theta=-msg.theta*(180/math.pi)
-        if(self.t1>0 and self.t1<=2*math.pi/3):
+        error_theta=1.5-msg.theta
+        if(self.t1>0 and self.t1<=2*math.pi/3+.05):
             self.pen_down.data=True
             self.pen1.publish(self.pen_down)
         else:
             self.pen_down.data=False
             self.pen1.publish(self.pen_down)
-        if(self.distance(error_x,error_y)>1 and self.t1<=2*math.pi/3):
-            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*5)
+        if(self.distance(error_x,error_y)>1):
+            self.bot1_status=0
+            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*200)
             self.pub_bot_1.publish(msg_bot)
         else:
+            self.bot1_status=1
             msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(0,0,0)
             self.pub_bot_1.publish(msg_bot)
             if(self.t1<2*math.pi/3):
                 self.t1=self.t1+.05
             else:
+                msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(0,0,0)
                 self.pen_down.data=False
                 self.pen1.publish(self.pen_down)
+
 
     def callbackBot2(self,msg):
         msg_bot = Twist()
@@ -74,24 +79,29 @@ class BOT_Controller_miniTheme(Node):
         # Calculate Error from feedback
         error_x=x-msg.x
         error_y=-y+msg.y
-        error_theta=-msg.theta*(180/math.pi)
-        if(self.t2>2*math.pi/3 and self.t2<=4*math.pi/3):
+        error_theta=1.5-msg.theta
+        if(self.t2>2*math.pi/3 and self.t2<=4*math.pi/3+.05):
             self.pen_down.data=True
             self.pen2.publish(self.pen_down)
         else:
             self.pen_down.data=False
             self.pen2.publish(self.pen_down)
         if(self.distance(error_x,error_y)>1):
-            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*5)
+            self.bot2_status=0
+            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*200)
             self.pub_bot_2.publish(msg_bot)
         else:
+            self.bot2_status=1
             msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(0,0,0)
             self.pub_bot_2.publish(msg_bot)
             if(self.t2<4*math.pi/3):
                 self.t2=self.t2+.05
             else:
+                msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(0,0,0)
                 self.pen_down.data=False
                 self.pen2.publish(self.pen_down)
+
+
 
     def callbackBot3(self,msg):
         msg_bot = Twist()
@@ -99,26 +109,30 @@ class BOT_Controller_miniTheme(Node):
         # Calculate Error from feedback
         error_x=x-msg.x
         error_y=-y+msg.y
-        error_theta=-msg.theta*(180/math.pi)
-        if(self.t3>4*math.pi/3 and self.t3<=2*math.pi):
+        error_theta=1.5-msg.theta
+        if(self.t3>4*math.pi/3 and self.t3<=2*math.pi+.05):
             self.pen_down.data=True
             self.pen3.publish(self.pen_down)
         else:
             self.pen_down.data=False
             self.pen3.publish(self.pen_down)
         if(self.distance(error_x,error_y)>1 ):
-            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*5)
+            self.bot3_status=0
+            msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(error_x,error_y,error_theta*200)
             self.pub_bot_3.publish(msg_bot)
         else:
+            self.bot3_status=1
             msg_bot.linear.x,msg_bot.linear.y,msg_bot.linear.z=self.inverse_kinematics(0,0,0)
             self.pub_bot_3.publish(msg_bot)
             if(self.t3<2*math.pi):
                 self.t3=self.t3+.05
             else:
+                
                 self.pen_down.data=False
                 self.pen3.publish(self.pen_down)
 
-    
+            
+
     def pi_controller(self,error,integral):
     
         # Proportional term
@@ -147,22 +161,36 @@ class BOT_Controller_miniTheme(Node):
         force_rear, self.integral_rear = self.pi_controller(error_x * 2/3 + error_theta * 1/3,
                                                             self.integral_rear)
         
-        if abs(force_right)>40 or abs(force_left)>40 or abs(force_rear)>40:
+        if abs(force_right)>60 or abs(force_left)>60 or abs(force_rear)>60:
             if abs(force_left) >= abs(force_right) and abs(force_left) >= abs(force_rear):
-                force_left=(40*force_left)/abs(force_left)
-                force_right=(40*force_right)/abs(force_left)
-                force_rear=(40*force_rear)/abs(force_left)
+                force_right=(60*force_right)/abs(force_left)
+                force_rear=(60*force_rear)/abs(force_left)
+                force_left=(60*force_left)/abs(force_left)
             elif abs(force_right )>= abs(force_left) and abs(force_right) >= abs(force_rear):
-                force_left=(40*force_left)/abs(force_right)
-                force_right=(40*force_right)/abs(force_right)
-                force_rear=(40*force_rear)/abs(force_right)
+                force_left=(60*force_left)/abs(force_right)
+                force_rear=(60*force_rear)/abs(force_right)
+                force_right=(60*force_right)/abs(force_right)
             else:
-                force_left=(40*force_left)/abs(force_rear)
-                force_right=(40*force_right)/abs(force_rear)
-                force_rear=(40*force_rear)/abs(force_rear)
+                force_left=(60*force_left)/abs(force_rear)
+                force_right=(60*force_right)/abs(force_rear)
+                force_rear=(60*force_rear)/abs(force_rear)
 
-        return float(-force_left)*1.5, float(-force_right), float(-force_rear)
-        
+        return float(-force_left), float(-force_right), float(-force_rear)
+
+
+    # def lissaousPointGenerate(self,theta):
+    #     r = 220 * math.cos(4 * theta)
+
+    #     # cartesian co-ordinates
+    #     x = round(r * math.cos(theta))
+    #     y = round(r * math.sin(theta))
+
+    #     # transforming to pixel co-ordinates
+    #     x = 250 + x
+    #     y = 250 - y
+
+    #     return x, y 
+
     def lissaousPointGenerate(self,t):
         x = 200 * math.cos(t)
         y = 150 * math.sin(4 * t)
@@ -170,7 +198,7 @@ class BOT_Controller_miniTheme(Node):
 
     def distance(self,x_error,y_error):
         return math.sqrt(y_error**2+x_error**2)    
-
+        
     
 
 

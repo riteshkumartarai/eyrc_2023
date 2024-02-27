@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing bot_control_6.egg-info/PKG-INFO
+writing dependency_links to bot_control_6.egg-info/dependency_links.txt
+writing entry points to bot_control_6.egg-info/entry_points.txt
+writing requirements to bot_control_6.egg-info/requires.txt
+writing top-level names to bot_control_6.egg-info/top_level.txt
+reading manifest file 'bot_control_6.egg-info/SOURCES.txt'
+writing manifest file 'bot_control_6.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/python3.10/site-packages/bot-control-6.egg-link (link to .)
+Installing bonus = bot_control_6.botControl_6b:mainstop_service script to /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/bot_control_6
+Installing flower script to /home/subun/eyrc_hb/hb_task_6_ws/install/bot_control_6/lib/bot_control_6
+
+Installed /home/subun/eyrc_hb/hb_task_6_ws/build/bot_control_6
+running install_data
