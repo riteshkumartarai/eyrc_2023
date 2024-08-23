@@ -1,1 +1,0 @@
-/home/subun/eyrc_hb/hb_task1a_ws/build/turtlesim/rosidl_generator_cpp/turtlesim/srv/detail/spawn__traits.hpp

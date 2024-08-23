@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_INTROSPECTION_CPP_BUILDING_DLL -DROS_PACKAGE_NAME=\"my_robot_interfaces_e\"
 
-CXX_INCLUDES = -I/home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/rosidl_typesupport_introspection_cpp -I/home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/rosidl_generator_cpp -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
+CXX_INCLUDES = -I/home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/rosidl_typesupport_introspection_cpp -I/home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/rosidl_generator_cpp -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic
 

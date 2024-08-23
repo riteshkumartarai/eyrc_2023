@@ -1,1 +1,4 @@
-/home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/ament_cmake_environment_hooks/local_setup.dsv
+source;share/my_robot_interfaces_e/environment/ament_prefix_path.sh
+source;share/my_robot_interfaces_e/environment/library_path.sh
+source;share/my_robot_interfaces_e/environment/path.sh
+source;share/my_robot_interfaces_e/environment/pythonpath.sh

@@ -1,0 +1,37 @@
+[0.351s] Invoking command in '/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/src/hb_task_1a': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task_1a build --build-base /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build install --record /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/install.log --single-version-externally-managed
+[0.488s] running egg_info
+[0.488s] creating ../../build/hb_task_1a/hb_task_1a.egg-info
+[0.488s] writing ../../build/hb_task_1a/hb_task_1a.egg-info/PKG-INFO
+[0.489s] writing dependency_links to ../../build/hb_task_1a/hb_task_1a.egg-info/dependency_links.txt
+[0.489s] writing entry points to ../../build/hb_task_1a/hb_task_1a.egg-info/entry_points.txt
+[0.489s] writing requirements to ../../build/hb_task_1a/hb_task_1a.egg-info/requires.txt
+[0.489s] writing top-level names to ../../build/hb_task_1a/hb_task_1a.egg-info/top_level.txt
+[0.489s] writing manifest file '../../build/hb_task_1a/hb_task_1a.egg-info/SOURCES.txt'
+[0.490s] reading manifest file '../../build/hb_task_1a/hb_task_1a.egg-info/SOURCES.txt'
+[0.491s] writing manifest file '../../build/hb_task_1a/hb_task_1a.egg-info/SOURCES.txt'
+[0.491s] running build
+[0.491s] running build_py
+[0.491s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build
+[0.491s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib
+[0.491s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib/hb_task_1a
+[0.491s] copying hb_task_1a/task_1a_1796.py -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib/hb_task_1a
+[0.491s] copying hb_task_1a/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib/hb_task_1a
+[0.491s] running install
+[0.492s] running install_lib
+[0.492s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a
+[0.492s] copying /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib/hb_task_1a/task_1a_1796.py -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a
+[0.492s] copying /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build/lib/hb_task_1a/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a
+[0.492s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a/task_1a_1796.py to task_1a_1796.cpython-310.pyc
+[0.493s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a/__init__.py to __init__.cpython-310.pyc
+[0.493s] running install_data
+[0.493s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/share/ament_index
+[0.493s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/share/ament_index/resource_index
+[0.493s] creating /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/share/ament_index/resource_index/packages
+[0.493s] copying resource/hb_task_1a -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/share/ament_index/resource_index/packages
+[0.493s] copying package.xml -> /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/share/hb_task_1a
+[0.494s] running install_egg_info
+[0.494s] Copying ../../build/hb_task_1a/hb_task_1a.egg-info to /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages/hb_task_1a-0.0.0-py3.10.egg-info
+[0.495s] running install_scripts
+[0.507s] Installing task_1a_1796 script to /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/hb_task_1a
+[0.507s] writing list of installed files to '/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/install.log'
+[0.522s] Invoked command in '/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/src/hb_task_1a' returned '0': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task1a_ws/install/hb_task_1a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task_1a build --build-base /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/build install --record /home/ritesh/eyrc23_hb_1796/hb_task1a_ws/build/hb_task_1a/install.log --single-version-externally-managed

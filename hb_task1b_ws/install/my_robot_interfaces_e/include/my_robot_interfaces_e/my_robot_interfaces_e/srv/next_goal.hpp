@@ -1,1 +1,11 @@
-/home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/rosidl_generator_cpp/my_robot_interfaces_e/srv/next_goal.hpp
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef MY_ROBOT_INTERFACES_E__SRV__NEXT_GOAL_HPP_
+#define MY_ROBOT_INTERFACES_E__SRV__NEXT_GOAL_HPP_
+
+#include "my_robot_interfaces_e/srv/detail/next_goal__struct.hpp"
+#include "my_robot_interfaces_e/srv/detail/next_goal__builder.hpp"
+#include "my_robot_interfaces_e/srv/detail/next_goal__traits.hpp"
+
+#endif  // MY_ROBOT_INTERFACES_E__SRV__NEXT_GOAL_HPP_

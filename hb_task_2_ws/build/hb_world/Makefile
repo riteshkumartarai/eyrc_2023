@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_world
+CMAKE_SOURCE_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/subun/eyrc_hb/hb_task_2_ws/build/hb_world
+CMAKE_BINARY_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_world
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/subun/eyrc_hb/hb_task_2_ws/build/hb_world/CMakeFiles /home/subun/eyrc_hb/hb_task_2_ws/build/hb_world//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_world/CMakeFiles /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_world//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/subun/eyrc_hb/hb_task_2_ws/build/hb_world/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_world/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e
+CMAKE_SOURCE_DIR = /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e
+CMAKE_BINARY_DIR = /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e
 
 # Utility rule file for ament_cmake_python_build_my_robot_interfaces_e_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/compil
 include CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg:
-	cd /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/ament_cmake_python/my_robot_interfaces_e && /usr/bin/python3.10 setup.py egg_info
+	cd /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/ament_cmake_python/my_robot_interfaces_e && /usr/bin/python3.10 setup.py egg_info
 
 ament_cmake_python_build_my_robot_interfaces_e_egg: CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg
 ament_cmake_python_build_my_robot_interfaces_e_egg: CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/depend:
-	cd /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_my_robot_interfaces_e_egg.dir/depend
 

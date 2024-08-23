@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/my_robot_interfaces
-# Build directory: /home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces
+# Source directory: /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/my_robot_interfaces
+# Build directory: /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/my_robot_interfaces
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -1,9 +1,0 @@
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/uninstall.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/bot_interfaces_uninstall.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/test.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/edit_cache.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/rebuild_cache.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/list_install_components.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/install.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/install/local.dir
-/home/subun/eyrc_hb/hb_task_5_ws/build/bot_interfaces/CMakeFiles/install/strip.dir

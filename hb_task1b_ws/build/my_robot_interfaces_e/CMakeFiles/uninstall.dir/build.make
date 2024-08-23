@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e
+CMAKE_SOURCE_DIR = /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e
+CMAKE_BINARY_DIR = /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/src/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/src/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

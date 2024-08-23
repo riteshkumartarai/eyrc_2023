@@ -1,0 +1,50 @@
+[0.557s] Invoking command in '/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/src/bot_control5': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bot_control5 build --build-base /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build install --record /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/install.log --single-version-externally-managed
+[0.723s] running egg_info
+[0.724s] creating ../../build/bot_control5/bot_control5.egg-info
+[0.724s] writing ../../build/bot_control5/bot_control5.egg-info/PKG-INFO
+[0.724s] writing dependency_links to ../../build/bot_control5/bot_control5.egg-info/dependency_links.txt
+[0.724s] writing entry points to ../../build/bot_control5/bot_control5.egg-info/entry_points.txt
+[0.724s] writing requirements to ../../build/bot_control5/bot_control5.egg-info/requires.txt
+[0.724s] writing top-level names to ../../build/bot_control5/bot_control5.egg-info/top_level.txt
+[0.724s] writing manifest file '../../build/bot_control5/bot_control5.egg-info/SOURCES.txt'
+[0.725s] reading manifest file '../../build/bot_control5/bot_control5.egg-info/SOURCES.txt'
+[0.726s] writing manifest file '../../build/bot_control5/bot_control5.egg-info/SOURCES.txt'
+[0.726s] running build
+[0.726s] running build_py
+[0.726s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build
+[0.726s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib
+[0.726s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5
+[0.726s] copying bot_control5/stopService.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5
+[0.727s] copying bot_control5/mini_theme.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5
+[0.727s] copying bot_control5/control_node.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5
+[0.727s] copying bot_control5/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5
+[0.727s] running install
+[0.727s] running install_lib
+[0.727s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5
+[0.728s] copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5/stopService.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5
+[0.728s] copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5/mini_theme.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5
+[0.728s] copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5/control_node.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5
+[0.728s] copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build/lib/bot_control5/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5
+[0.728s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5/stopService.py to stopService.cpython-310.pyc
+[0.729s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5/mini_theme.py to mini_theme.cpython-310.pyc
+[0.730s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5/control_node.py to control_node.cpython-310.pyc
+[0.731s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5/__init__.py to __init__.cpython-310.pyc
+[0.731s] running install_data
+[0.732s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/ament_index
+[0.732s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/ament_index/resource_index
+[0.732s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/ament_index/resource_index/packages
+[0.732s] copying resource/bot_control5 -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/ament_index/resource_index/packages
+[0.732s] creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/bot_control5/launch
+[0.732s] copying launch/minitheme.launch.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/bot_control5/launch
+[0.733s] copying package.xml -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/share/bot_control5
+[0.733s] running install_egg_info
+[0.734s] Copying ../../build/bot_control5/bot_control5.egg-info to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages/bot_control5-0.0.0-py3.10.egg-info
+[0.734s] running install_scripts
+[0.749s] Installing control_node script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] Installing control_node1 script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] Installing control_node2 script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] Installing control_node3 script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] Installing mini_theme script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] Installing stopflag script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/bot_control5
+[0.750s] writing list of installed files to '/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/install.log'
+[0.783s] Invoked command in '/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/src/bot_control5' returned '0': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/bot_control5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bot_control5 build --build-base /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/build install --record /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/bot_control5/install.log --single-version-externally-managed

@@ -1,0 +1,58 @@
+[0.716s] Invoking command in '/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_task2b': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/hb_task2b build --build-base /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build install --record /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/install.log --single-version-externally-managed
+[0.945s] running egg_info
+[0.946s] creating ../../../build/hb_task2b/hb_task2b.egg-info
+[0.947s] writing ../../../build/hb_task2b/hb_task2b.egg-info/PKG-INFO
+[0.947s] writing dependency_links to ../../../build/hb_task2b/hb_task2b.egg-info/dependency_links.txt
+[0.947s] writing entry points to ../../../build/hb_task2b/hb_task2b.egg-info/entry_points.txt
+[0.947s] writing requirements to ../../../build/hb_task2b/hb_task2b.egg-info/requires.txt
+[0.947s] writing top-level names to ../../../build/hb_task2b/hb_task2b.egg-info/top_level.txt
+[0.947s] writing manifest file '../../../build/hb_task2b/hb_task2b.egg-info/SOURCES.txt'
+[0.949s] reading manifest file '../../../build/hb_task2b/hb_task2b.egg-info/SOURCES.txt'
+[0.950s] writing manifest file '../../../build/hb_task2b/hb_task2b.egg-info/SOURCES.txt'
+[0.950s] running build
+[0.950s] running build_py
+[0.950s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build
+[0.950s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib
+[0.950s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.950s] copying hb_task2b/bot_2_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.950s] copying hb_task2b/bot_3_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.950s] copying hb_task2b/nextGoalPub.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.951s] copying hb_task2b/bot_1_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.951s] copying hb_task2b/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.951s] copying hb_task2b/feedback2b.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b
+[0.951s] running install
+[0.951s] running install_lib
+[0.952s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/bot_2_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/bot_3_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/nextGoalPub.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/bot_1_controller.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] copying /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build/lib/hb_task2b/feedback2b.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b
+[0.952s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/bot_2_controller.py to bot_2_controller.cpython-310.pyc
+[0.953s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/bot_3_controller.py to bot_3_controller.cpython-310.pyc
+[0.954s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/nextGoalPub.py to nextGoalPub.cpython-310.pyc
+[0.956s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/bot_1_controller.py to bot_1_controller.cpython-310.pyc
+[0.956s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/__init__.py to __init__.cpython-310.pyc
+[0.957s] byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b/feedback2b.py to feedback2b.cpython-310.pyc
+[0.957s] running install_data
+[0.958s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/ament_index
+[0.958s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/ament_index/resource_index
+[0.958s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/ament_index/resource_index/packages
+[0.958s] copying resource/hb_task2b -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/ament_index/resource_index/packages
+[0.958s] copying package.xml -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b
+[0.958s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b/launch
+[0.958s] copying launch/task2b.launch.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b/launch
+[0.958s] copying launch/submission.launch.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b/launch
+[0.959s] copying launch/controller.launch.py -> /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b/launch
+[0.959s] creating /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/share/hb_task2b/scripts
+[0.959s] running install_egg_info
+[0.960s] Copying ../../../build/hb_task2b/hb_task2b.egg-info to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages/hb_task2b-0.0.0-py3.10.egg-info
+[0.961s] running install_scripts
+[0.981s] Installing controller_bot1 script to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/hb_task2b
+[0.981s] Installing controller_bot2 script to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/hb_task2b
+[0.981s] Installing controller_bot3 script to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/hb_task2b
+[0.981s] Installing feedback2b script to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/hb_task2b
+[0.981s] Installing nextgoalpub script to /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/hb_task2b
+[0.982s] writing list of installed files to '/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/install.log'
+[1.007s] Invoked command in '/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_task2b' returned '0': PYTHONPATH=/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/prefix_override:/home/ritesh/eyrc23_hb_1796/hb_task_2_ws/install/hb_task2b/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/hb_task2b build --build-base /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/build install --record /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_task2b/install.log --single-version-externally-managed

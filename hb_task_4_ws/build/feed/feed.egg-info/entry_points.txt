@@ -1,5 +1,0 @@
-[console_scripts]
-feedback = feed.feedback_node:main
-transform_image = feed.image_transformation:main
-visualize_pen_pose = feed.visualization_penPose:main
-

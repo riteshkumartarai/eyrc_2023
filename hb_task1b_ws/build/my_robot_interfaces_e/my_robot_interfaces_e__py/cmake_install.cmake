@@ -1,8 +1,8 @@
-# Install script for directory: /home/subun/eyrc_hb/hb_task1b_ws/build/my_robot_interfaces_e/my_robot_interfaces_e__py
+# Install script for directory: /home/ritesh/eyrc23_hb_1796/hb_task1b_ws/build/my_robot_interfaces_e/my_robot_interfaces_e__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/subun/eyrc_hb/hb_task1b_ws/install/my_robot_interfaces_e")
+  set(CMAKE_INSTALL_PREFIX "/home/ritesh/eyrc23_hb_1796/hb_task1b_ws/install/my_robot_interfaces_e")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

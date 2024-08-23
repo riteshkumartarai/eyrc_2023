@@ -1,0 +1,7 @@
+[console_scripts]
+controller_bot1 = hb_task2b.bot_1_controller:main
+controller_bot2 = hb_task2b.bot_2_controller:main
+controller_bot3 = hb_task2b.bot_3_controller:main
+feedback2b = hb_task2b.feedback2b:main
+nextgoalpub = hb_task2b.nextGoalPub:main
+

@@ -1,1 +1,0 @@
-/home/subun/eyrc_hb/hb_task_5_ws/src/bot_control5/launch/bot_control.launch.py

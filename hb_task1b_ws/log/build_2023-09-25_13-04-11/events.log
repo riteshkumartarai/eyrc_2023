@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000117] (hb_task_1b) JobQueued: {'identifier': 'hb_task_1b', 'dependencies': OrderedDict()}
-[0.000133] (hb_task_1b) JobStarted: {'identifier': 'hb_task_1b'}
-[0.099559] (-) TimerEvent: {}
-[0.154049] (hb_task_1b) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 54, in build\n    data_files = get_data_files_mapping(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 42, in get_data_files_mapping\n    assert not os.path.isabs(source), \\\n  File "/usr/lib/python3.10/posixpath.py", line 62, in isabs\n    s = os.fspath(s)\nTypeError: expected str, bytes or os.PathLike object, not list\n'}
-[0.154300] (hb_task_1b) JobEnded: {'identifier': 'hb_task_1b', 'rc': 1}
-[0.164638] (-) EventReactorShutdown: {}

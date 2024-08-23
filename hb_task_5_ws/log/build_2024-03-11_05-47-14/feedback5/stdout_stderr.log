@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/feedback5/feedback5.egg-info
+writing ../../build/feedback5/feedback5.egg-info/PKG-INFO
+writing dependency_links to ../../build/feedback5/feedback5.egg-info/dependency_links.txt
+writing entry points to ../../build/feedback5/feedback5.egg-info/entry_points.txt
+writing requirements to ../../build/feedback5/feedback5.egg-info/requires.txt
+writing top-level names to ../../build/feedback5/feedback5.egg-info/top_level.txt
+writing manifest file '../../build/feedback5/feedback5.egg-info/SOURCES.txt'
+reading manifest file '../../build/feedback5/feedback5.egg-info/SOURCES.txt'
+writing manifest file '../../build/feedback5/feedback5.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5
+copying feedback5/feedback_node.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5
+copying feedback5/viz_pose.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5
+copying feedback5/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5
+copying feedback5/image_proc.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5
+running install
+running install_lib
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5
+copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5/feedback_node.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5
+copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5/viz_pose.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5
+copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5/__init__.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5
+copying /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/build/lib/feedback5/image_proc.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5
+byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5/feedback_node.py to feedback_node.cpython-310.pyc
+byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5/viz_pose.py to viz_pose.cpython-310.pyc
+byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5/image_proc.py to image_proc.cpython-310.pyc
+running install_data
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/ament_index
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/ament_index/resource_index
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/ament_index/resource_index/packages
+copying resource/feedback5 -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/ament_index/resource_index/packages
+creating /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/feedback5/launch
+copying launch/viz_pose.launch.py -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/feedback5/launch
+copying package.xml -> /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/share/feedback5
+running install_egg_info
+Copying ../../build/feedback5/feedback5.egg-info to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/python3.10/site-packages/feedback5-0.0.0-py3.10.egg-info
+running install_scripts
+Installing feedback_node script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/feedback5
+Installing image_proc script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/feedback5
+Installing viz_pose script to /home/ritesh/eyrc23_hb_1796/hb_task_5_ws/install/feedback5/lib/feedback5
+writing list of installed files to '/home/ritesh/eyrc23_hb_1796/hb_task_5_ws/build/feedback5/install.log'

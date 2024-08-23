@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/my_robot_interfaces
+CMAKE_SOURCE_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/my_robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces
+CMAKE_BINARY_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/my_robot_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces/CMakeFiles /home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/my_robot_interfaces/CMakeFiles /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/my_robot_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/subun/eyrc_hb/hb_task_2_ws/build/my_robot_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/my_robot_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ my_robot_interfaces__rosidl_typesupport_cpp/fast:
 .PHONY : my_robot_interfaces__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_my_robot_interfaces
+# Target rules for targets named ament_cmake_python_copy_my_robot_interfaces
 
 # Build rule for target.
-ament_cmake_python_symlink_my_robot_interfaces: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_my_robot_interfaces
-.PHONY : ament_cmake_python_symlink_my_robot_interfaces
+ament_cmake_python_copy_my_robot_interfaces: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_my_robot_interfaces
+.PHONY : ament_cmake_python_copy_my_robot_interfaces
 
 # fast build rule for target.
-ament_cmake_python_symlink_my_robot_interfaces/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build
-.PHONY : ament_cmake_python_symlink_my_robot_interfaces/fast
+ament_cmake_python_copy_my_robot_interfaces/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_my_robot_interfaces.dir/build.make CMakeFiles/ament_cmake_python_copy_my_robot_interfaces.dir/build
+.PHONY : ament_cmake_python_copy_my_robot_interfaces/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_my_robot_interfaces_egg
@@ -1067,7 +1067,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_my_robot_interfaces_egg"
-	@echo "... ament_cmake_python_symlink_my_robot_interfaces"
+	@echo "... ament_cmake_python_copy_my_robot_interfaces"
 	@echo "... my_robot_interfaces"
 	@echo "... my_robot_interfaces__cpp"
 	@echo "... my_robot_interfaces__py"

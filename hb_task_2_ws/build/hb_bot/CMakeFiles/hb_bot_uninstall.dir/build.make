@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot
+CMAKE_SOURCE_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot
+CMAKE_BINARY_DIR = /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot
 
 # Utility rule file for hb_bot_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/hb_bot_uninstall.dir/compiler_depend.make
 include CMakeFiles/hb_bot_uninstall.dir/progress.make
 
 CMakeFiles/hb_bot_uninstall:
-	/usr/bin/cmake -P /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 hb_bot_uninstall: CMakeFiles/hb_bot_uninstall
 hb_bot_uninstall: CMakeFiles/hb_bot_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/hb_bot_uninstall.dir/clean:
 .PHONY : CMakeFiles/hb_bot_uninstall.dir/clean
 
 CMakeFiles/hb_bot_uninstall.dir/depend:
-	cd /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot /home/subun/eyrc_hb/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot /home/subun/eyrc_hb/hb_task_2_ws/build/hb_bot/CMakeFiles/hb_bot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/src/eYRC-2023_Hologlyph_Bots/hb_bot /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot /home/ritesh/eyrc23_hb_1796/hb_task_2_ws/build/hb_bot/CMakeFiles/hb_bot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hb_bot_uninstall.dir/depend
 
